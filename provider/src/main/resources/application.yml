@@ -1,0 +1,10 @@
+server:
+  port: 9003
+  address: 127.0.0.1
+spring:
+  application:
+    name: nacos_provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
