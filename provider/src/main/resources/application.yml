@@ -3,7 +3,7 @@ server:
   address: 127.0.0.1
 spring:
   application:
-    name: nacos_provider
+    name: nacos-provider
   cloud:
     nacos:
       discovery:

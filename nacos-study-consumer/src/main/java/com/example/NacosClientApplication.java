@@ -18,8 +18,8 @@ public class NacosClientApplication {
 
     }
     @Bean
-   /* @LoadBalanced*/
-    public RestTemplate template(){
+    @LoadBalanced
+    public RestTemplate restTemplate(){
         return new RestTemplate();
     }
 }

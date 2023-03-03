@@ -20,12 +20,12 @@ public class UserClientController {
       /* return  nacosServerFeign.getInfoByUsername(username);*/
     }
     @GetMapping("test")
-    public String test(){
+     public String test(){
         return "hello";
     }
     @GetMapping("/test2")
     public String test2(){
-        return restTemplate.getForObject("http://localhost:9003/provider",String.class);
+        return restTemplate.getForObject("http://nacos-provider/provider",String.class);
     }
 
 
