@@ -1,6 +1,6 @@
 server:
   port: 9002
-  address: 127.0.0.1
+#  address: 127.0.0.1
 spring:
   application:
     name: nacos_consumer
@@ -8,3 +8,4 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+
