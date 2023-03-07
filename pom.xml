@@ -62,6 +62,21 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.netflix.ribbon/ribbon &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.netflix.ribbon</groupId>-->
+<!--            <artifactId>ribbon</artifactId>-->
+<!--            <version>2.7.18</version>-->
+<!--        </dependency>-->
+
+
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-ribbon &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>-->
+<!--            <version>2.2.6.RELEASE</version>-->
+<!--        </dependency>-->
+
     </dependencies>
 
 </project>
