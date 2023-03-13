@@ -25,7 +25,7 @@ public class UserClientController {
     }
     @GetMapping("/test2")
     public String test2(){
-        return restTemplate.getForObject("http://nacos-provider/provider",String.class);
+        return restTemplate.getForObject("http://providerWZY/provider",String.class);
     }
 
 
