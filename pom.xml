@@ -11,6 +11,8 @@
     <modules>
         <module>provider</module>
         <module>nacos-study-consumer</module>
+        <module>gateway</module>
+        <module>utils</module>
     </modules>
 
     <properties>

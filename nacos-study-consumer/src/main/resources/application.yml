@@ -9,5 +9,9 @@ spring:
       discovery:
         server-addr: 127.0.0.1:8848
         cluster-name: JN
-        namespace: 00a91270-84f1-4f3f-9903-c4311dd8d3a9 #命名空间在dev中
-
+        # namespace: 00a91270-84f1-4f3f-9903-c4311dd8d3a9 #命名空间在dev中
+feign:
+  httpclient:
+    enabled: true #支持Http开关
+    max-connections: 200 #最大连接数
+    max-connections-per-route: 50 #单个路径的最大连接数

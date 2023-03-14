@@ -1,31 +1,34 @@
 package com.example.controller;
 
+import com.example.feign.NacosServerFeign;
+import org.example.ResultEntity;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 @RestController
 @RequestMapping("/clients")
 public class UserClientController {
     @Autowired
     RestTemplate restTemplate;
-    /*@Autowired
-    NacosServerFeign nacosServerFeign;*/
+    @Autowired
+    NacosServerFeign nacosServerFeign;
     @GetMapping("/{username}")
     public String getInfoByUsername(@PathVariable String username){
-
-       return  restTemplate.getForObject("http://nacos-demo-server/servers/userInfo/"+username,String.class);
-      /* return  nacosServerFeign.getInfoByUsername(username);*/
+        return nacosServerFeign.getUsername(username);
     }
     @GetMapping("test")
-     public String test(){
-        return "hello";
+     public String test(@RequestHeader(value = "Truth",required = false) String truth){
+        return "hello "+truth;
     }
     @GetMapping("/test2")
     public String test2(){
-        return restTemplate.getForObject("http://providerWZY/provider",String.class);
+//        return restTemplate.getForObject("http://providerWZY/provider",String.class);
+        return nacosServerFeign.getPost();
+    }
+
+    @GetMapping("test3")
+    public ResultEntity test3(){
+        return nacosServerFeign.test3();
     }
 
 
