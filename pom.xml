@@ -20,6 +20,8 @@
         <spring.alibaba.version>2021.0.4.0</spring.alibaba.version><!--2222222222222222-->
         <spring.cloud.version>2021.0.4</spring.cloud.version>  <!--333333333333333333-->
         <spring.boot.version>2.7.4</spring.boot.version>
+        <mysql.version>8.0.28</mysql.version>
+        <mybatis-plus.version>3.5.2</mybatis-plus.version>
     </properties>
     <dependencyManagement>
         <dependencies>

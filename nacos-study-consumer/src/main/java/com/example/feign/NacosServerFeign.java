@@ -23,4 +23,7 @@ public interface NacosServerFeign {
     @GetMapping("provider/test3")
     public ResultEntity test3();
 
+    @GetMapping("provider/userById/{userId}")
+    public ResultEntity getUserById(@PathVariable("userId") String userId);
+
 }

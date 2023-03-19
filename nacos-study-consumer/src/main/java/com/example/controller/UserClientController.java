@@ -32,4 +32,10 @@ public class UserClientController {
     }
 
 
+    @GetMapping("userById/{userId}")
+    public ResultEntity userById(@PathVariable String userId){
+        return nacosServerFeign.getUserById(userId);
+    }
+
+
 }
