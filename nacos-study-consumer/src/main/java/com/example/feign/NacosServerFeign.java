@@ -1,17 +1,14 @@
 package com.example.feign;
 
+import com.example.feign.fallback.NacosServerFallBackFactory;
 import org.example.ResultEntity;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import java.util.Random;
 
 @Component
-@FeignClient("providerWZY")
+@FeignClient(value = "providerWZY",fallbackFactory = NacosServerFallBackFactory.class)
 public interface NacosServerFeign {
     @GetMapping("provider/test")
     public String getPost();
@@ -25,5 +22,8 @@ public interface NacosServerFeign {
 
     @GetMapping("provider/userById/{userId}")
     public ResultEntity getUserById(@PathVariable("userId") String userId);
+
+
+
 
 }

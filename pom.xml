@@ -22,6 +22,7 @@
         <spring.boot.version>2.7.4</spring.boot.version>
         <mysql.version>8.0.28</mysql.version>
         <mybatis-plus.version>3.5.2</mybatis-plus.version>
+        <sentinel-version>1.8.6</sentinel-version>
     </properties>
     <dependencyManagement>
         <dependencies>
