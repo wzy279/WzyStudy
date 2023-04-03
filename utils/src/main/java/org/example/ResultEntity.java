@@ -22,7 +22,7 @@ public class ResultEntity<T> {
      * @return
      */
     public static <Type> ResultEntity<Type> successWithoutData(){
-        return new ResultEntity<Type>(SUCCESS,null,null);
+        return new ResultEntity<Type>(SUCCESS,"success",null);
     }
 
     /**

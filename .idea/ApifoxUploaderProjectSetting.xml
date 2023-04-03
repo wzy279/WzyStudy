@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ApifoxUploaderProjectSetting">
+    <option name="apifoxAccessToken" value="APS-AjQggBf2m5SzQOC1acYi9wMPWPxM28mI" />
+    <option name="apifoxApiOverwriteMode" value="覆盖所有字段" />
+    <option name="apifoxProjectIds">
+      <array>
+        <option value="# ModuleName:ProjectID" />
+        <option value="mall-admin:2492401,管理" />
+        <option value="nacos-study-consumer:2492401" />
+      </array>
+    </option>
+    <option name="yapiTokens" value="" />
+  </component>
+</project>

@@ -5,6 +5,8 @@ import org.example.ResultEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
+
+
 @RestController
 @RequestMapping("/clients")
 public class UserClientController {
@@ -36,6 +38,8 @@ public class UserClientController {
     public ResultEntity userById(@PathVariable String userId){
         return nacosServerFeign.getUserById(userId);
     }
+
+
 
 
 }

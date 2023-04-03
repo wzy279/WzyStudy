@@ -5,6 +5,7 @@ import com.example.config.DefaultFeignConfiguration;
 import com.example.feign.fallback.NacosServerFallBackFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClient;
@@ -34,6 +35,8 @@ public class NacosClientApplication {
     NacosServerFallBackFactory providerClientFallBackFactory(){
         return new NacosServerFallBackFactory();
     }
+
+
 
 
 
