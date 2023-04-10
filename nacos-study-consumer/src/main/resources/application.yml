@@ -14,16 +14,16 @@ spring:
       transport:
         port: 8719
         dashboard: 127.0.0.1:8858
-  security:
-    oauth2:
-      client:
-        registration:
-          github:
-            client-id: 9c5f4e9ea499b75eca75
-            client-secret: afa7ff3468bd6021fc95449c07ea8edca123ffef
-            redirect-uri: http://localhost:9002/login/oauth2/code/github
-            scope: user
-            authorization-grant-type: demo
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          github:
+#            client-id: 9c5f4e9ea499b75eca75
+#            client-secret: afa7ff3468bd6021fc95449c07ea8edca123ffef
+#            redirect-uri: http://localhost:9002/login/oauth2/code/github
+#            scope: user
+#            authorization-grant-type: demo
 
 feign:
   httpclient:
