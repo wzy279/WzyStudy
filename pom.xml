@@ -13,7 +13,6 @@
         <module>nacos-study-consumer</module>
         <module>gateway</module>
         <module>utils</module>
-        <module>nacos-study-WechatLogin</module>
     </modules>
 
     <properties>
