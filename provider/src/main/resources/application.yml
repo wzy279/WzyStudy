@@ -7,11 +7,11 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: Wzy020730!
-    url: jdbc:mysql://127.0.0.1:3306/cloudlibrary?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    password: Root_123
+    url: jdbc:mysql://8.130.72.37:3306/cloudlibrary?useUnicode=true&characterEncoding=utf-8&useSSL=false
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8848
+        server-addr: 192.168.30.137:8848
         cluster-name: JN #集群名称
         # namespace: 00a91270-84f1-4f3f-9903-c4311dd8d3a9 #命名空间

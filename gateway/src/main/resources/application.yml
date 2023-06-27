@@ -6,7 +6,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8848
+        server-addr: 192.168.30.137:8848
         cluster-name: JN
       # namespace: 00a91270-84f1-4f3f-9903-c4311dd8d3a9 #命名空间在dev中
     gateway:
